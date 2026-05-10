@@ -2,7 +2,7 @@
 
 using namespace std;
 
-// Loop - (TC: O(log₁₀ * N), SC: O(1))
+// Loop - (TC: O(logN), SC: O(1))
 int countDigit(int n)
 {
     if (n == 0)
