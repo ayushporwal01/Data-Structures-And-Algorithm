@@ -8,12 +8,12 @@ int countDigit(int n)
     if (n == 0)
         return 1;
 
-    n = abs(n);
+    long long x = abs((long long)n);
     int cnt = 0;
-    while (n > 0)
+    while (x > 0)
     {
         cnt++;
-        n = n / 10;
+        x /= 10;
     }
     return cnt;
 }
