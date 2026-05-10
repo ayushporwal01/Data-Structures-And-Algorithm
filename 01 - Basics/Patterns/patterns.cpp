@@ -2,6 +2,7 @@
 
 using namespace std;
 
+//Square 
 void print1(int n) {
     for (int i = 0; i < n; i++){
         for (int j = 0; j < n; j++){
@@ -11,6 +12,7 @@ void print1(int n) {
     }
 }
 
+//Stairs
 void print2(int n) {
     for (int i = 0; i < n; i++) {
         for (int j = 0; j <= i; j++) {
@@ -20,6 +22,10 @@ void print2(int n) {
     }
 }
 
+/* 1 
+   1 2
+   1 2 3
+*/
 void print3(int n) {
     for (int i = 1; i < n; i++) {
         for (int j = 1; j <= i; j++) {
@@ -29,6 +35,10 @@ void print3(int n) {
     }
 }
 
+/* 1 
+   2 2
+   3 3 3
+*/
 void print4(int n) {
     for (int i = 1; i < n; i++) {
         for (int j = 1; j <= i; j++) {
@@ -38,6 +48,12 @@ void print4(int n) {
     }
 }
 
+/* 5 stars
+   4 stars
+   3 stars 
+   2 stars
+   1 star
+*/
 void print5(int n) {
     for (int i = n; i >= 0; i--) {
         for (int j = i; j >= 0; j--) {
@@ -47,6 +63,10 @@ void print5(int n) {
     }
 }
 
+/* 1 2 3 
+   1 2
+   1
+*/
 void print6(int n) {
     for (int i = n; i >= 1; i--) {
         for (int j = 1; j <= i; j++) {
@@ -56,6 +76,7 @@ void print6(int n) {
     }
 }
 
+//Pyramid
 void print7(int n) {
     for (int i = 0; i < n; i++) {
         // space
@@ -74,6 +95,7 @@ void print7(int n) {
     }
 }
 
+//Reverse Pyramid
 void print8(int n) { 
     for (int i = n; i > 0; i--) { //n = 4 -> 1
         // space
@@ -92,6 +114,7 @@ void print8(int n) {
     }
 }
 
+//Diamond
 void print9(int n) {
     for (int i = 0; i < n; i++) {
         // space
@@ -126,6 +149,7 @@ void print9(int n) {
     }
 }
 
+//Butterfly
 void print10(int n) {
     for (int i = 1; i <= 2 * n - 1; i++) {
         int stars = i;
@@ -347,7 +371,7 @@ int main() {
     // print7(5);
     // print8(5);
     // print9(5);
-    // print10(5);
+    print10(5);
     // print11(4);
     // print12(4);
     // print13(4);
