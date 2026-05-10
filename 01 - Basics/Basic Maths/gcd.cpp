@@ -36,7 +36,7 @@ int findGcd2(int n1, int n2) {
     return 1; //never executes 
 }
 
-// Time Complexity - O(log(min(n1, n2))) - Euclidean Algorithm
+// Time Complexity - O(log_φ(min(n1, n2))) - Euclidean Algorithm
 int findGcd3(int n1, int n2) {
     n1 = abs(n1);
     n2 = abs(n2);
