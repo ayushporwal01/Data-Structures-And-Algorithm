@@ -11,9 +11,11 @@ void selectionSort(int arr[], int n) {
                mini = j;
             }
         }
-        int temp = arr[mini];
-        arr[mini] = arr[i];
-        arr[i] = temp;
+        if(mini != i) {
+           int temp = arr[mini];
+           arr[mini] = arr[i];
+           arr[i] = temp;
+        }
     }
 }
 
