@@ -2,7 +2,7 @@
 
 using namespace std;
 
-// Sort Stack(TC: O(NlogN), SC: O(N))
+// Optimal(TC: O(NlogN), SC: O(N))
 stack<int> sortStack(stack<int> st, int n) {
     vector<int> temp;
 
