@@ -2,24 +2,24 @@
 
 using namespace std;
 
-// Optimal(TC: O(NlogN), SC: O(N))
+// Bruce(TC: O(NlogN), SC: O(N))
 stack<int> sortStack(stack<int> st, int n) {
-    vector<int> temp;
+  vector<int> temp;
 
-    while(!st.empty()) {
-        int curr = st.top();
-        st.pop();
-        
-        temp.push_back(curr);
-    }
+  while(!st.empty()) {
+    int curr = st.top();
+    st.pop();
+      
+    temp.push_back(curr);
+  }
 
-    sort(temp.begin(), temp.end());
+  sort(temp.begin(), temp.end());
 
-    for(auto it : temp) {
-        st.push(it);
-    }
+  for(auto it : temp) {
+      st.push(it);
+  }
 
-    return st;
+  return st;
 }
 
 int main() {

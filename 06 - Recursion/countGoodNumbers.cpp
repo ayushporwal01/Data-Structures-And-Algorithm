@@ -5,16 +5,16 @@ using namespace std;
 //Binary Exponentiation - TC: O(logN), SC: O(logN)
 const int M = 1e9 + 7;
 int findPower(long long a, long long b) {
-    if(b == 0) return 1;
+   if(b == 0) return 1;
 
-    long long half = findPower(a, b/2);
-    long long res = (half * half) % M;
+   long long half = findPower(a, b/2);
+   long long res = (half * half) % M;
 
-    if(b % 2 == 1) {
-       res = (res * a) % M;
-    }
-    
-    return res;
+   if(b % 2 == 1) {
+      res = (res * a) % M;
+   }
+   
+   return res;
 }
 
 int countGoodNumbers(long long n) {
