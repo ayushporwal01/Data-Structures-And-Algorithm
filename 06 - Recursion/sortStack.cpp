@@ -16,7 +16,7 @@ stack<int> sortStack(stack<int> st, int n) {
   sort(temp.begin(), temp.end());
 
   for(auto it : temp) {
-      st.push(it);
+    st.push(it);
   }
 
   return st;
