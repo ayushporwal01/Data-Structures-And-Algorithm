@@ -21,7 +21,7 @@ int countGoodNumbers(long long n) {
    return (long long)findPower(5, (n+1)/2) * findPower(4, n/2) % M;
 }
 
-//Optimal
+//Optimal(TC: O(logN), SC:O(1))
 int findPower2(long long x, long long n) {
    long long res = 1;
 
@@ -37,7 +37,7 @@ int findPower2(long long x, long long n) {
    return res;
 }
 
-int countGoodNumbers(long long n) {
+int countGoodNumbers2(long long n) {
    long long odd = (n + 1) / 2;
    long long even = n / 2;
 
@@ -48,5 +48,6 @@ int main() {
    int n = 50;
    
    cout << countGoodNumbers(n);
+   cout << countGoodNumbers2(n);
   return 0;
 }
