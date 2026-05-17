@@ -27,7 +27,7 @@ int findPower2(long long x, long long n) {
 
    while(n > 0) {
       if(n % 2 == 1) {
-         res = (res % x) % M;
+         res = (res * x) % M;
       }
 
       x = (x * x) % M;
@@ -47,7 +47,7 @@ int countGoodNumbers2(long long n) {
 int main() {
    int n = 50;
    
-   cout << countGoodNumbers(n);
+   cout << countGoodNumbers(n) << endl;
    cout << countGoodNumbers2(n);
   return 0;
 }
