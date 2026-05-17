@@ -41,7 +41,7 @@ int countGoodNumbers2(long long n) {
    long long odd = (n + 1) / 2;
    long long even = n / 2;
 
-   return (findPower2(5, odd) * findPower2(4, even)) % M;
+   return (long long)findPower2(5, odd) * findPower2(4, even) % M;
 }
 
 int main() {
